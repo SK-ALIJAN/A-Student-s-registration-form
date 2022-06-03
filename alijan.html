@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+   <html lang="en">
+       
+    <head>
+    <title> student registration form</title>
+<style>
+
+body {
+background-image: linear-gradient(green, pink, yellow);
+}
+
+* {
+box-sizing: border-box;
+font-family: georgia;
+}
+
+.registration-form {
+text-align: center;
+text-decoration: underline;
+color: white;
+padding: 9px;
+margin: 9px;
+}
+
+div.form {
+box-sizing: border-box;
+padding: 9px ;
+padding-left: 30px;
+border: 1px solid purple;
+margin: 350px;
+background-color: purple;
+color: white;
+font-weight: bold;
+border-radius: 7px;
+
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+select {
+padding: 5px;
+margin: 11px;
+border: 1px solid purple;
+border-radius: 4px;
+caret-color: purple;
+}
+
+fieldset {
+padding: 4px none none none;
+border: 2px solid white;
+margin: 3px;
+border-radius: 6px;
+width: 80%;
+accent-color: green;
+}
+textarea {
+padding: 4px;
+margin: 7px;
+border: 1px solid purple;
+border-radius: 7px;
+width: 70%;
+}
+
+div.box {
+padding: 6px;
+border: 1px solid white;
+margin:6px;
+border-radius: 6px;
+}
+
+table#table {
+padding: 7px;
+border: none;
+margin: 6px;
+width: 100%;
+word-spacing: 1px;
+
+}
+
+input[type="checkbox"] {
+accent-color: green;
+}
+
+input[type="submit"],
+input[type="reset"] {
+font-family: georgia;
+display: inline;
+border: none;
+padding: 7px;
+margin: 7px;
+border-radius: 20px;
+width: 40%;
+background-color: green;
+color: white;
+}
+
+input[type="submit"]:hover {
+color: black;
+}
+
+input[type="reset"]:hover {
+color: black;
+}
+
+
+</style>
+      </head>
+
+<body> 
+
+<div class="form">
+<form action="#" method="post" auto-complete="off" >
+<div class="registration-form">
+<h1> STUDENT REGISTRATION FORM</h1>
+    </div>
+<lebel for=" first name"> FIRST NAME</lebel>
+<input type=" text" name=" first name" placeholder=" enter your first name.." required autofocus> 
+  (max 30 characters a-z and A-Z)
+
+<br>
+
+<lebel for=" last name"> LAST NAME</lebel>
+<input type="text" name=" last name" placeholder="enter your last name.." required autofocus>
+   (max 30 characters a-z and A-Z)
+
+<br>
+
+<lebel for="date of birth"> DATE OF BIRTH</lebel>
+<input type="date" name="date of birth" value="date of birth" required>
+
+<br>
+
+<lebel for="email id"> EMAIL ID</lebel>
+<input type="email" name="email" placeholder="email id"autofocus required>
+
+<br>
+
+<lebel for="mobile number">MOBILE NUMBER</lebel>
+
+<select>
+<option value="country code">--country code--</>
+<option value="+91 (india)">+91 (india)</option>
+<option value="+1 (usa)">+1 (usa)</option>
+<option value="+10(brazil)">+10 (brazil)</option>
+<option value="+92(pakistan)">+92 (pakistan)</option>
+</select>
+
+<input type="number" name="number" max-length="10" autofocus required>
+
+<br>
+
+<fieldset>
+<legend>Gender</legend>
+
+<lebel for="male"> MALE</lebel>
+<input type="radio" name="gender" value="male">
+
+<lebel for="female">FEMALE</lebel>
+<input type="radio" name="gender" value="female">
+
+<lebel for="others">OTHERS</lebel>
+<input type="radio" name="gender" value="others">
+
+</fieldset>
+
+<br>
+
+<lebel for="address">ADDRESS</lebel>
+<textarea  cols="50" rows="5" max-length="50" autofocus placeholder=" enter your address" required></textarea>
+
+<br><br>
+
+<lebel for="city">CITY</lebel>
+<input type=" text" name="city" placeholder="city name" autofocus required >
+
+<br>
+
+<lebel for="pin code">PIN CODE</lebel>
+<input type="number" name="pin code" placeholder="pin code" autofocus required>
+
+<br>
+
+<lebel for="hobbies">HOBBIES</lebel>
+<input type="checkbox" name="drawing" value="yes" checked>Drawing
+<input type="checkbox" name="singing" value="yes">Singing
+<input type="checkbox" name="dancing" value="yes">Dancing
+<input type="checkbox" name="skeching" value="yes">Sketching
+<br>
+<input type="checkbox" name="others" value="yes" >Others<input type="text" name="others">
+
+<br>
+
+<lebel for=" qualification">QUALIFICATION</lebel>
+<div class="box">
+<table id="table"border="2px" style="solid" color="white">
+
+<thead>
+<tr>
+<th>sl. no. examination</th>
+<th>board</th>
+<th>parcentage</th>
+<th>year of passing</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1   class X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td>2   class XII</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td>3   gradution</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td>4   masters</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+
+   </table>
+</div>
+
+<br>
+
+<div class="course">
+
+<lebel for="course applied for">COURSE APPLIED FOR</lebel>
+<input type="checkbox" name="bca" value="yes" checked>B.c.a
+<input type="checkbox" name="bcom" value="yes">B.com
+<input type="checkbox" name="bsc" value="yes">B.sc
+<input type="checkbox" name="ba" value="yes">B.a
+
+</div>
+
+<br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+<input type="submit" name="submit" value="submit">
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" name="reset" value="reset">
+
+
+</div>
+</form>
+
+
+
+
+
+
+
+
+</body>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
