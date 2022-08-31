@@ -1,0 +1,48 @@
+$color: red;
+$bg_color: green;
+$width: 50%;
+$border:none;
+
+@mixin universal {
+
+background-color: aqua;
+  margin: 0px;
+  box-sizing: border-box;
+  color: black;
+  padding: 0px;
+  text-transform: capitalize;
+
+    
+}
+
+
+* {
+  @include universal()
+}
+
+@import url(import.csss);
+
+
+.resume-first-div{
+@extend .main-div
+
+
+}
+
+div{
+
+h4{
+color: brown;
+font-weight: 900;
+
+}
+a{
+text-decoration: none;
+color: rgb(255, 0, 187);
+
+}
+a:hover{
+color: black;
+}
+
+}
